@@ -1,0 +1,23 @@
+// Areatriangulo.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+
+void main() {
+	float b,c,a,x;
+	cout<<"Ingresar b: ";
+	cin>>b;
+	cout<<"Ingresar a: ";
+	cin>>a;
+	cout<<"Ingresar c: ";
+	cin>>c;
+	x= pow(b,2)-(4*a*c);
+	cout<< "x es: "<<x<<endl;
+	getch();
+}
+
