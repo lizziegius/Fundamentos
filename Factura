@@ -1,0 +1,18 @@
+// Factura.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+void main() {
+        float f,s,iva;
+        iva=0.13;
+        cout<<"Ingresar s: ";
+        cin>>s;
+        f=s*iva;
+        cout<<"El valor de la factura es: "<<f<<endl;
+        getch();
+}
