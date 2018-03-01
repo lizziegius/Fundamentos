@@ -1,0 +1,29 @@
+//SistemaEcuacion.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+void main() {
+	float A,B,C,D,E,F,X,Y;
+	cout<<"Ingrese A: ";
+	cin>>A;
+	cout<<"Ingrese B: ";
+	cin>>B;
+	cout<<"Ingrese C: ";
+	cin>>C;
+	cout<<"Ingrese D: ";
+	cin>>D;
+	cout<<"Ingrese E: ";
+	cin>>E;
+	cout<<"Ingrese F: ";
+	cin>>F;
+	X=(F*B-E*C)/(B*D-E*A);
+	cout<<"El valor de X es: "<<X<<endl;
+	Y=(F-D*X)/E;
+	cout<<"El valor de Y es: "<<Y<<endl;
+	getch();
+}
