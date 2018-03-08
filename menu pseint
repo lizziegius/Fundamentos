@@ -1,0 +1,33 @@
+Proceso menu
+	Escribir "Ingrese a: ";
+	Leer a;
+	Escribir "Ingrese b: ";
+	Leer b;
+	Escribir "1-.Suma";
+	Escribir "2-.Resta";
+	Escribir "3-. Multiplicacion";
+	Escribir "4-.Division";
+	Escribir "0-.Salir";
+	Escribir "Ingresar opcion: ";
+	Leer opcion;
+	Segun opcion Hacer 
+		1:
+			r<-(a+b);
+			Escribir r;
+		2:
+			r<-(a-b);
+			Escribir r;
+		3:
+			r<-(a*b);
+			Escribir r;
+		4:
+			r<-(a/b);
+			Escribir r;
+		0:
+			Escribir "Salir";
+		De Otro Modo:
+			Escribir "Error";
+		Fin Segun 
+	Hasta Que opcion==0
+FinProceso
+
