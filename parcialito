@@ -1,0 +1,79 @@
+// parcialito.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+
+void distancia(float xa, float ya, float xb, float yb);
+
+void main (){
+	float d,xa,xb,ya,yb;
+	cout<<"Tenemeos los puntos de forma(xa,ya)"<<endl;
+	cout<<"Ingrese su primer punto:";
+	cin>>xa>>ya;
+	cout<<"Ingrese su segundo punto:";
+	cin>>xb>>yb;
+	distancia(xa,ya,xb,yb);
+	getch;
+}
+
+void distancia(float xa,float ya,float xb,float yb){
+	float xc,yc,a,b,c,dis1,dis2,g,e,f;
+	xc=0;
+	yc=0;
+	b=xc-xa;
+	c=yc-ya;
+	a=(pow(b,2))+(pow(c,2));
+	dis1=sqrt(a);
+	g=xc-xb;
+	e=yc-yb;
+	f=(pow(g,2))+(pow(e,2));
+	dis2=sqrt(f);
+	if(dis1>dis2)
+		cout<<"El punto ("<<xa<<","<<ya<<") esta mas lejos del origen";
+	else 
+		cout<<"El punto ("<<xb<<","<<yb<<") esta mas lejos del origen";
+	getch();
+}
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#define MAX 20
+#include "math.h"
+
+void serievector(float b, int n);
+void mostrarvector(float serie[],int n);
+void cargarvector(float serie [],int n);
+
+void main(){
+
+
+
+
+
+
+
+
+
+}
+
+void serie(int serie[],float b, int n){
+	float s, signo;
+	signo=1;
+	s=0;
+	for(int i=1; i<n;i++){
+		s=(s+(pow(b,i)))*signo;
+		signo=signo*-1;
+		b=s;
+		serie[i]=b;
+	}
+}
+
+
+
+
